@@ -25,6 +25,10 @@ import core.util.DecryptRSA;
 import core.util.EncryptRSA;
 
 @Controller
+/*
+ * \/user도메인 설계를 다시 고민해봐도 좋을것 같아요.
+ * 모든 컨트롤러에서 다 user를 사용하는것 같네요.
+ */
 @RequestMapping(value = "/user")
 public class UserController {
 	private static final Logger logger = LoggerFactory.getLogger(UserController.class);

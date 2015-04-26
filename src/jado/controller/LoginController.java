@@ -40,6 +40,10 @@ public class LoginController {
 		return "login";
 	}
 
+	/*
+	 * 제 생각엔
+	 * rsa decrypt 로직을 filter에 넣어도 될 것 같아요. 
+	 */
 	@RequestMapping(value = "/user/login", method = RequestMethod.POST)
 	public String processLogin(@RequestParam("idEncryption") String userId, @RequestParam("pwEncryption") String password, HttpSession session, Model model) {
 		Result decryptedUserId; 
