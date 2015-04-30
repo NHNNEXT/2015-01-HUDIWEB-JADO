@@ -1,3 +1,4 @@
+// YG: 이 프로젝트에서 가장 깔끔하고 이쁜 코드네요. 좋아요 쾅!
 function ScrollAction(elTarget) {
     this.elTarget = document.querySelector(elTarget);
     if (!this.elTarget) return;
